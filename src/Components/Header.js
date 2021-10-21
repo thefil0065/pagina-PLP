@@ -32,22 +32,17 @@ export default function BasicGrid(props) {
        borderBottom: 1,
        }}>
       <Grid container spacing={0} >
-        <Grid item xs={4} >
-          <Item>            
+        <Grid item xs={2} >
             <img src={logo} alt="" class="logo" />
-          </Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>
             <MyButtonGroup toggle={(value) => props.toggle(value)} />
-          </Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>
             <BasicTextFields Cerca={(text) => {props.Cerca(text)}}/>
-            <ButtonReset />
-
-          </Item>
+        </Grid>
+        <Grid item xs={2}>
+          <ButtonReset />
         </Grid>
 
       </Grid>

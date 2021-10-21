@@ -27,9 +27,8 @@ export default function MediaCard2(props) {
     return (
 
           <Grid item xs={3} md={3}>
-            <Item>
 
-            <Card sx={{ maxWidth: 350, }}>
+            <Card sx={{ maxWidth: 350, margin: 1 }}>
                 <CardMedia
                     component="img"
                     height="140"
@@ -50,7 +49,6 @@ export default function MediaCard2(props) {
             </Card>
 
 
-            </Item>
           </Grid>
 
 

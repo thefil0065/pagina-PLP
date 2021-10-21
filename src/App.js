@@ -25,8 +25,8 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function App() {
 
-  const [searchTerm, setTerm] = useState(""); // stato dei dati iniziale
-  const [arrProds, setArrProds] = useState(products); // stato dei dati iniziale
+  const [searchTerm, setTerm] = useState(""); 
+  const [arrProds, setArrProds] = useState(products);
 
 
   function Cerca(text) {

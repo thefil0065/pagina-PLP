@@ -16,11 +16,14 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function BasicGrid2() {
   return (
-    <Box sx={{ flexGrow: 1, }}>
+    <Box sx={{ 
+      flexGrow: 1,
+      backgroundColor: 'text.disabled',
+
+    }}>
       <Grid container spacing={0}>
 
         <Grid item xs={8}>
-          <Item>xs=12</Item>
         </Grid>
 
         <Grid item xs={4}>
@@ -28,7 +31,6 @@ export default function BasicGrid2() {
             <Box
             sx={{
                 display: 'flex',
-                backgroundColor: 'text.disabled',
                 flexDirection: 'column',
                 alignItems: 'center',
                 '& > *': {
